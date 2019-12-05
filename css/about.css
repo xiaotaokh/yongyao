@@ -1,0 +1,159 @@
+.company-brief img {
+  width: 5rem;
+  height: 4rem;
+  margin-right: 0.3rem;
+  float: left; }
+.company-brief .desc {
+  color: #333; }
+  .company-brief .desc p {
+    font-size: 14px;
+    text-indent: 2em; }
+  .company-brief .desc .title {
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 30px;
+    font-size: 14px; }
+
+.service-mode-item {
+  margin-bottom: 20px; }
+  .service-mode-item .left, .service-mode-item .right {
+    height: 60px;
+    border-radius: 3px;
+    line-height: 60px; }
+  .service-mode-item .left {
+    border: 1px solid #424e67;
+    float: left;
+    width: 2.4rem;
+    text-align: center;
+    color: #424e67;
+    font-size: 18px;
+    font-weight: bold; }
+  .service-mode-item .right {
+    border: 1px solid #bdbdbd;
+    background: #f5f6fa;
+    margin-left: 2.6rem;
+    font-size: 12px;
+    padding: 0 20px; }
+
+.section-content.service-flow {
+  font-size: 0; }
+  .section-content.service-flow .service-flow-item {
+    vertical-align: middle;
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    border-radius: 3px; }
+    .section-content.service-flow .service-flow-item.first {
+      border: 1px solid #eecab1; }
+      .section-content.service-flow .service-flow-item.first .title {
+        background: #eecab1; }
+      .section-content.service-flow .service-flow-item.first .detail .diamond {
+        background: #eecab1; }
+    .section-content.service-flow .service-flow-item.two {
+      border: 1px solid #f5b98f; }
+      .section-content.service-flow .service-flow-item.two .title {
+        background: #f5b98f; }
+      .section-content.service-flow .service-flow-item.two .detail .diamond {
+        background: #f5b98f; }
+    .section-content.service-flow .service-flow-item.three {
+      border: 1px solid #f97c57; }
+      .section-content.service-flow .service-flow-item.three .title {
+        background: #f97c57; }
+      .section-content.service-flow .service-flow-item.three .detail .diamond {
+        background: #f97c57; }
+    .section-content.service-flow .service-flow-item.four {
+      border: 1px solid #ed5665; }
+      .section-content.service-flow .service-flow-item.four .title {
+        background: #ed5665; }
+      .section-content.service-flow .service-flow-item.four .detail .diamond {
+        background: #ed5665; }
+    .section-content.service-flow .service-flow-item .title {
+      text-align: center;
+      font-size: 0.24rem;
+      color: #fff;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      margin-bottom: 0; }
+    .section-content.service-flow .service-flow-item .detail {
+      padding: 25px 20px; }
+      .section-content.service-flow .service-flow-item .detail li {
+        line-height: 36px; }
+        .section-content.service-flow .service-flow-item .detail li .diamond {
+          display: inline-block;
+          width: 0.08rem;
+          height: 0.08rem;
+          margin: 0.04rem 0 0 0.04rem;
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+  .section-content.service-flow .icon-jiantou {
+    vertical-align: middle;
+    font-size: 50px;
+    color: #bdbdbd;
+    margin: 0 32px; }
+    .section-content.service-flow .icon-jiantou.one {
+      color: #f5b98f; }
+    .section-content.service-flow .icon-jiantou.two {
+      color: #f97c57; }
+    .section-content.service-flow .icon-jiantou.three {
+      color: #ed5665; }
+
+.service-operate-flow {
+  font-size: 0; }
+  .service-operate-flow .start, .service-operate-flow .end {
+    vertical-align: middle;
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 30px; }
+  .service-operate-flow .start {
+    background: #89bb8b; }
+  .service-operate-flow .end {
+    background: #f56560; }
+  .service-operate-flow .process {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 23px; }
+    .service-operate-flow .process.process1 {
+      background: #aeb17c; }
+    .service-operate-flow .process.process2 {
+      background: #d3a66d; }
+    .service-operate-flow .process.process3 {
+      background: #ed9d55; }
+    .service-operate-flow .process.process4 {
+      background: #fd8f4d;
+      height: 110px;
+      width: 110px;
+      padding: 30px;
+      font-size: 18px; }
+    .service-operate-flow .process.process5 {
+      background: #fd804d; }
+    .service-operate-flow .process.process6 {
+      background: #fd7356; }
+  .service-operate-flow .iconfont {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: .3rem;
+    color: #999;
+    margin: 0 18.7px; }
+
+/*# sourceMappingURL=about.css.map */

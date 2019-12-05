@@ -1,0 +1,159 @@
+.content .consult-service-type {
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+  .service-type {
+    font-size: 0;
+    .service-item {
+      display: inline-block;
+      width: 33.3%;
+      text-align: center;
+      &.active-item, &:hover {
+        color: #c52030;
+        .img {
+          border-color: #c52030;
+        }
+      }
+      .img {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        border: 1px solid #dbdbdb;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: .3s;
+        .iconfont {
+          font-size: 1rem;
+        }
+      }
+      .name {
+        margin-top: 10px;
+      }
+      
+    }
+  }
+}
+
+section.service-detail {
+  display: none;
+  &:first-child {
+    display: block
+  }
+}
+.service-item-detail-wrap {
+  font-size: 0;
+  .service-item-detail {
+    
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 3px;
+    &:nth-child(odd) {
+      border: 1px solid #f56560;
+      .title {
+        background: #f56560;
+      }
+    }
+    &:nth-child(even) {
+      border: 1px solid #fd954d;
+      .title {
+        background: #fd954d;
+      }
+    }
+    .title {
+      text-align: center;
+      font-size: 0.24rem;
+      color: #fff;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      margin-bottom: 0;
+    }
+    .detail {
+      padding: 20px;
+      li {
+        line-height: 0.48rem;
+        .circle {
+          display: inline-block;
+          width: 0.08rem;
+          height: 0.08rem;
+          border-radius: 50%;
+          background: #999;
+          margin-right: 4px;
+        }
+        span {
+          vertical-align: middle;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+.industry-consult {
+  .industry-item {
+    width: 220px;
+    
+  }
+  .service-item-detail-wrap {
+    .service-item-detail {
+      height: 3rem;
+      margin-right: 106.6px;
+    }
+    .service-item-detail:last-child{
+      margin-right: 0;
+    }
+  }
+
+}
+.country-consult {
+  .service-item-detail-wrap {
+    .service-item-detail {
+      width: 200px;
+      height: 4rem;
+      margin-right: 50px;
+    }
+    .service-item-detail:last-child {
+      margin-right: 0;
+    }
+  }
+
+}
+.company-consult {
+  .company-consult-detail {
+    height: 3rem;
+    .detail {
+      li {
+        float: left;
+        margin-right: .45rem;
+        span {
+          vertical-align: middle;
+        }
+        .circle {
+          display: inline-block;
+          width: 0.08rem;
+          height: 0.08rem;
+          border-radius: 50%;
+          background: #999;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+.page-wrap {
+  min-height: 100%;
+  position: relative;
+}
+.top-wrap {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 333px;
+  box-sizing: border-box;
+}
+.page-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 333px;
+  margin-top: 333px;
+}

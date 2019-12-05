@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+@import url("http://at.alicdn.com/t/font_692972_m32pmqyapn.css");
+
+.clearfix {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html {
+  height: 100%;
+  font-size: 75px !important;
+}
+
+body {
+  min-width: 16rem;
+  height: 100%;
+  background: #fff;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+.slider-area .slick-prev:before,
+.slider-area .slick-next:before {
+  font-size: 28px;
+}
+
+.page-header-bak {
+  width: 16rem;
+  margin: 0 auto;
+  height: 1rem;
+}
+
+.page-header {
+  border-bottom: 1px solid #304056;
+  width: 100%;
+  background: #304056;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.side-tool {
+  position: fixed;
+  top: 80%;
+  right: 0.9rem;
+  z-index: 9999;
+}
+
+.side-tool .wechat,
+.side-tool .phone {
+  position: relative;
+}
+
+.side-tool .wechat,
+.side-tool .phone {
+  position: relative;
+}
+
+.side-tool .wechat .box,
+.side-tool .phone .box {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.08rem;
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.35);
+  margin-bottom: 15px;
+}
+
+.side-tool .wechat .box:hover,
+.side-tool .phone .box:hover {
+  transform: rotate(360deg);
+  transition: all .5s;
+  /* animation:sideTool .5s linear; */
+}
+
+/* @keyframes sideTool
+{
+    0%{
+    transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.5) rotate(180deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+} */
+.side-tool .wechat .box .iconfont,
+.side-tool .phone .box .iconfont {
+  font-size: 0.3rem;
+  color: #c52031;
+}
+
+.wechat-img {
+  width: 100px;
+  height: 100px;
+}
+
+.phonenumber {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.nav {
+  width: 16rem;
+  margin: 0 auto;
+  height: 1rem;
+}
+
+.nav img {
+  width: 2rem;
+  height: 1rem;
+}
+
+.nav .nav-ul {
+  list-style: none;
+  float: right;
+  margin-right: 30px;
+}
+
+.nav .nav-ul .nav-item {
+  line-height: 1rem;
+  float: left;
+  padding: 0px;
+  /* margin-left: 30px; */
+  position: relative;
+  padding: 0px 30px;
+}
+
+.nav .nav-ul .nav-item:hover {
+  background: #39759f;
+}
+
+.nav .nav-ul .nav-item:hover a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.nav .nav-ul .nav-item .nav-active {
+  /* color: #c52031; */
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+.nav .nav-ul .nav-item>a {
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  padding: 5px 0;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.nav .nav-ul .nav-item>a:hover {
+  /* color: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid #fff; */
+}
+
+.nav .nav-ul .nav-item .sub {
+  display: none;
+  min-width: 100px;
+  left: 0;
+  top: 62px;
+  position: absolute;
+  line-height: 36px;
+  z-index: 10000;
+  box-shadow: 0 2px 12px 0 rgba(255, 255, 255, 0.1);
+}
+
+.nav .nav-ul .nav-item .sub li {
+  background: rgba(255, 255, 255, .9);
+  cursor: pointer;
+}
+
+.nav .nav-ul .nav-item .sub li:hover {
+  background: rgba(47, 112, 198, .8);
+}
+
+.nav .nav-ul .nav-item .sub li:hover a {
+  color: #fff;
+}
+
+.nav .nav-ul .nav-item .sub li a {
+  padding: 5px 10px 0 10px;
+  color: #000;
+  z-index: 1000000;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%;
+}
+
+.page-content {
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.page-content .header h3.title {
+  text-align: center;
+  font-size: 24px;
+  color: #424e67;
+  font-weight: bold;
+  position: relative;
+  /*定位横线（当横线的父元素）*/
+}
+
+.page-content .header h3.title:before,
+.page-content .header h3.title:after {
+  content: "";
+  /*CSS伪类用法*/
+  position: absolute;
+  /*定位背景横线的位置*/
+  top: 52%;
+  background: #bdbdbd;
+  /*宽和高做出来的背景横线*/
+  width: 0.8rem;
+  height: 1px;
+}
+
+.page-content .header h3.title:before {
+  left: 37%;
+  /*调整背景横线的左右距离*/
+}
+
+.page-content .header h3.title:after {
+  right: 37%;
+}
+
+.page-wrap section {
+  margin-top: 60px;
+  color: #333;
+}
+
+.page-wrap section .title {
+  margin-bottom: 20px;
+}
+
+.page-wrap section .title .split {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.2rem;
+  background: #c52031;
+  vertical-align: middle;
+}
+
+.page-wrap section .title h4 {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 0.2rem;
+  color: #424e67;
+}
+
+.page-wrap section .text {
+  line-height: 30px;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.page-bottom {
+  background: #333;
+}
+
+.page-bottom .page-bottom-main {
+  width: 16rem;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+
+.page-bottom .page-bottom-main .logo {
+  height: 1.2rem;
+  width: 2.4rem;
+  float: left;
+}
+
+.page-bottom .page-bottom-main .qrcode {
+  height: 1.6rem;
+  width: 1.6rem;
+  float: right;
+}
+
+.page-bottom .page-bottom-main .bottom-nav {
+  margin-left: 3rem;
+  margin-right: 2rem;
+  font-size: 0;
+}
+
+.page-bottom .page-bottom-main .bottom-nav ul {
+  vertical-align: top;
+  width: 18%;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.page-bottom .page-bottom-main .bottom-nav ul li {
+  font-size: 12px;
+  height: 0.38rem;
+  line-height: 0.38rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #ddd;
+}
+
+.page-bottom .page-bottom-main .bottom-nav ul li a {
+  color: #ddd;
+}
+
+.page-bottom .page-bottom-main .bottom-nav ul li:first-child {
+  font-size: 14px;
+}
+
+.page-bottom .page-bottom-main .bottom-nav ul li:first-child a {
+  color: #fff;
+}
+
+.page-bottom .page-bottom-bottom {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+.slider-area .slick-slide {
+  margin: 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.slider-area .slick-slide img {
+  width: 100%;
+}
+
+.slider-area .slick-prev:before,
+.slider-area .slick-next:before {
+  color: black;
+}
+
+.record {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.record:hover {
+  color: #eee;
+}
+
+/*# sourceMappingURL=common.css.map */

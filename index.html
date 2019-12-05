@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国威永耀-首页</title>
+  <script src="js/ie.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="js/nivo-slider/themes/default/default.css" />
+  <link rel="stylesheet" type="text/css" href="js/nivo-slider/nivo-slider.css" />
+  <link rel="stylesheet" type="text/css" href="js/jquery-loading/jquery.loading.min.css">
+  <link rel="stylesheet" type="text/css" href="js/jquery-loading/jquery.loading.min.css" />
+  <link rel="stylesheet" type="text/css" href="js/webui-popover/jquery.webui-popover.min.css" />
+</head>
+
+<body>
+  <div class="side-tool">
+    <div class="wechat clearfix">
+      <div id="wechat" class="box" data-placement="left">
+        <i class="iconfont icon-weixin"></i>
+      </div>
+    </div>
+    <div class="phone clearfix">
+      <div id="phone" class="box" data-placement="left">
+        <i class="iconfont icon-9"></i>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="page-header-bak"></div>
+    <div class="page-header">
+      <nav class="nav clearfix">
+        <img class="logo" src="images/logo.png">
+        <ul id="nav" class="nav-ul clearfix">
+          <li class="nav-item">
+            <a href="index.html" class="nav-active">首页</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">关于我们</a>
+            <ul class="sub">
+              <li><a href="about.html#brief">公司简介</a></li>
+              <li><a href="about.html#vision">战略定位</a></li>
+              <li><a href="about.html#service-tenet">服务宗旨</a></li>
+              <li><a href="about.html#service">发展愿景</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="service.html">业务领域</a>
+            <ul class="sub">
+              <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+              <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+              <li><a href="service.html#brand">大数据管理与培训</a></li>
+              <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="research.html">核心技术</a>
+            <ul class="sub">
+              <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+              <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+              <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+              <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="consult-service.html">特色产品</a>
+            <ul class="sub">
+              <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+              <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+              <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">联系我们</a>
+            <ul class="sub">
+              <li><a href="contact.html#recruit">招贤纳士</a></li>
+              <li><a href="contact.html#partner">项目合伙人招聘</a></li>
+              <li><a href="contact.html#contact">联系方式</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="theme-default">
+      <div class="introduct">
+        <div class="title">产业数字化赋能集成平台</div>
+        <div class="Subheading">全产业链 · 动态呈现 · 高质高效</div>
+        <div class="btn">
+          <a href="about.html#brief" class="more blacks">了解更多</a>
+        </div>
+      </div>
+      <div id="slider" class="banner nivoSlider"></div>
+    </div>
+    <div class="main-bg">
+      <div class="main">
+        <div class="service-type">
+          <div class="header">
+            <h3 class="title">业务领域</h3>
+          </div>
+          <div class="service-item country" id="database">
+            <div class="img"><i class="iconfont icon-jishujiejuefangan"></i></div>
+            <div class="name">大数据应用场景解决方案</div>
+          </div>
+          <div class="service-item industry" id="strategy">
+            <div class="img"><i class="iconfont icon-dashuju"></i></div>
+            <div class="name">大数据系统软件开发</div>
+          </div>
+          <div class="service-item company" id="brand">
+            <div class="img"><i class="iconfont icon-peixun"></i></div>
+            <div class="name">大数据管理与培训</div>
+          </div>
+          <div class="service-item database" id="third-party">
+            <div class="img"><i class="iconfont icon-zixunguwen"></i></div>
+            <div class="name">大数据支撑下的咨询顾问服务</div>
+          </div>
+        </div>
+        <div class="service-type-mp4">
+          <video autoplay="autoplay" controls loop>
+            <source src="http://www.gwxll.com/images/308-1080.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <section>
+          <div class="title">
+            <span class="split"></span>
+            <h4>产品展示</h4>
+          </div>
+          <div class="section-content product">
+            <div class="product-slider slider-area">
+              <!-- <div class="product-item">
+                  <img src="images/product-1.png"/>
+                  <div class="title">城市研究</div>
+                  <div class="brief multi-ellipsis">很长很长很长很长很长很长很长很差个很长这是新闻标题表山东法师打发互粉撒打发苏打粉哈是废话发烧督查思考的黑发互粉撒的互粉撒态比谁都啊苏打粉哈岁的付阿斯多夫i哈斯对方表示不服嗲声</div>
+                </div> -->
+
+            </div>
+          </div>
+        </section>
+        <section class="news-view">
+          <div class="title">
+            <span class="split"></span>
+            <h4>国威永耀公司动态</h4>
+            <a href="news-list.html" class="more-news" target="_blank">更多新闻</a>
+          </div>
+          <div class="section-content views">
+            <img src="images/newspaper.webp" />
+            <ul class="news-list">
+              <!-- <li class="news-item">
+                  <div class="time">[2018-10-10]</div>
+                  <div class="new-title ellipsis"><a>都是短发是否打算发吧时的方法是把对方海防晒发四方达不到释放发生地方啊读书的好方式发送到发送地方吧服饰的法律沙发四点半发生地方阿苏苏苏</a></div>
+                </li> -->
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      <div class="page-bottom-main clearfix">
+        <img class="logo" src="images/logo.png">
+        <img class="qrcode" src="images/code.jpeg">
+        <div class="bottom-nav">
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="about.html#brief">公司简介</a></li>
+            <li><a href="about.html#vision">战略定位</a></li>
+            <li><a href="about.html#service-tenet">服务宗旨</a></li>
+            <li><a href="about.html#service">发展愿景</a></li>
+          </ul>
+          <ul>
+            <li><a href="service.html">业务领域</a></li>
+            <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+            <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+            <li><a href="service.html#brand">大数据管理与培训</a></li>
+            <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+
+          </ul>
+          <ul>
+            <li><a href="research.html">核心技术</a></li>
+            <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+            <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+            <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+            <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+          </ul>
+          <ul>
+            <li><a href="consult-service.html">特色产品</a></li>
+            <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+            <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+            <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+          </ul>
+          <ul>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="contact.html#recruit" class="recruit">招贤纳士</a></li>
+            <li><a href="contact.html#partner" class="partner">项目合伙人招聘</a></li>
+            <li><a href="contact.html#contact" class="contact">联系方式</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-bottom-bottom">
+        最终版权归属©北京国威永耀科技有限公司
+        <a class="record" href="http://www.miitbeian.gov.cn">京ICP备18055866号</a>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/webui-popover/jquery.webui-popover.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/nivo-slider/jquery.nivo.slider.js"></script>
+  <script type="text/javascript" src="js/nav-slide/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/jquery-loading/jquery.loading.min.js"></script>
+
+
+  <script type='text/javascript'>
+    (function (m, ei, q, i, a, j, s) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      j = ei.createElement(q),
+        s = ei.getElementsByTagName(q)[0];
+      j.async = true;
+      j.charset = 'UTF-8';
+      j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+      s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 131163);
+  </script>
+  <script>
+    $(document).on('ready', function () {
+      getBanner();
+      getNews();
+      getProduction();
+      // 业务领域跳转
+      $('.service-item').on('click', function (e) {
+        var id = $(this).attr('id');
+        if (id === 'database-consult') {
+          // window.location.href = window.location.origin+"/gav/";
+          var href = window.location.origin + "/gav/";
+          window.open(href, '_blank');
+        } else {
+          // window.location.href = "consult-service.html?type=" + id;
+          var href = "service.html#" + id;
+          window.open(href, '_blank');
+        }
+
+      })
+
+      function getBanner() {
+        $.ajax({
+          type: "post",
+          url: "http://39.105.51.244:80/website/bannerlist",
+          success: function (res) {
+            var result = JSON.parse(res);
+            result.data.forEach(function (item) {
+              var template = "<img src='http://39.105.51.244:80/website/downloadimg?img_id=" + item
+                .img_id + "'/>";
+              $('.banner').append(template)
+            })
+            $('.banner').nivoSlider({
+              // effect: 'slideInLeft',
+              effect: 'fade',
+              pauseOnHover: true,
+            });
+          },
+          error: function () {
+
+          }
+        })
+      }
+
+      function getNews() {
+        $(".news-list").loading();
+        $.ajax({
+          type: "post",
+          url: "http://39.105.51.244:80/website/getnewslist",
+          data: {
+            skip: 0,
+            count: 6
+          },
+          success: function (res) {
+
+            var result = JSON.parse(res);
+            var newsList = result.data;
+            newsList.forEach(function (item) {
+              var formateDate = new Date(item.date).format('YYYY-MM-dd');
+              var template = '<li class="news-item">' +
+                '<div class="time">[' + formateDate + ']</div>' +
+                '<div class="new-title ellipsis"><a href="news-detail.html?id=' + item.news_id +
+                '" target="_blank">' + item.title + '</a></div>' +
+                '</li>';
+              $('.news-list').append(template);
+              $('.news-list').loading('stop');
+            })
+          },
+          error: function () {
+
+          }
+        })
+      }
+
+      function getProduction() {
+        $(".product-slider").loading();
+
+        $.ajax({
+          type: "post",
+          url: "http://39.105.51.244:80/website/ghproductlist",
+          success: function (res) {
+
+            var result = JSON.parse(res);
+            var productList = result.data;
+            productList.forEach(function (item) {
+
+              var template = '<div class="product-item">' +
+                '<img src="http://39.105.51.244:80/website/downloadimg?img_id=' + item.img_id + '"/>' +
+                '<div class="title">' + item.title + '</div>' +
+                // '<div class="brief multi-ellipsis">&nbsp;&nbsp;&nbsp;&nbsp;' + item.describe + '</div>'
+              '</div>';
+              $(".product-slider").append(template);
+            })
+            $(".product-slider").loading('stop');
+            $('.product-slider').slick({
+              infinite: true,
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              // autoplay: true
+            });
+
+            // 点击每一项跳转到详情
+            $(".slider-area .slick-list .product-item").click(() => {
+              window.open("consult-service.html", '_blank');
+            })
+          },
+          error: function () {
+
+          }
+        })
+
+      }
+
+    })
+  </script>
+
+</body>
+
+</html>

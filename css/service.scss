@@ -1,0 +1,43 @@
+
+.page-content {
+  .header {
+    h3.title:before{
+      left: 39%;
+    }
+    h3.title:after {
+      right: 39%;
+    }
+  }
+}
+
+.gov-database {
+  p {
+    margin-top: 10px;
+  }
+}
+.archivement {
+  text-align: center;
+}
+.strategy {
+  .question {
+    font-size: .2rem;
+    font-weight: bold;
+    color: #424e67;
+    margin-bottom: .3rem;
+  }
+}
+.img-desc {
+  .img {
+    float: left;
+  }
+  .desc {
+    padding-left: 220px;
+  }
+}
+.chart {
+  text-align: center;
+  img {
+    width: 540px;
+    margin-top: 20px;
+  }
+}

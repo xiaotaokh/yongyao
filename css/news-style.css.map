@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,2BAAc;EACZ,UAAU,EAAE,IAAI;EAChB,6BAAE;IACA,WAAW,EAAE,IAAI;IACjB,WAAW,EAAE,GAAG",
+"sources": ["news-style.scss"],
+"names": [],
+"file": "news-style.css"
+}

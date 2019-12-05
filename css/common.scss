@@ -1,0 +1,299 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ @mixin clearfix{
+
+  &:before,
+  &:after {
+    content: " ";/* 1 */
+    display: table;/* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+  /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+  *zoom: 1;
+}
+
+// Usage as a Mixin
+.clearfix{
+  @include clearfix;
+}
+.ellipsis {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+$theme-color: #c52031;
+html {
+  height: 100%;
+  font-size: 75px !important;
+}
+body {
+  min-width: 16rem;
+  height: 100%;
+  background: #fff;
+
+}
+
+// body * {
+//   max-height: 100%
+
+// }
+html {
+  -webkit-text-size-adjust: 100%;
+}
+.slider-area {
+  .slick-prev:before,.slick-next:before {
+    font-size: 28px;
+  }
+}
+.page-header {
+  border-bottom: 1px solid #bdbdbd;
+}
+$box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+.side-tool {
+  position: fixed;
+  top: 50%;
+  right: .9rem;
+  z-index: 9999;
+  .wechat , .phone{
+    position: relative;
+    .box {
+      display: inline-block;
+      vertical-align: top;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.08rem;
+      background: #fff;
+      box-shadow: $box-shadow;
+      margin-bottom: 15px;
+      .iconfont {
+        font-size: .3rem;
+        color: $theme-color;
+      }
+    }
+  }
+}
+.wechat-img {
+  width: 100px;
+  height: 100px;
+}
+.phonenumber {
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.nav {
+  width: 16rem;
+  margin: 0 auto;
+  height: 1.2rem;
+  img {
+    width: 2.4rem;
+    height: 1.2rem;
+  }
+
+
+  .nav-ul {
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+    .nav-item {
+      line-height: 1.2rem;
+      float: left;
+      padding: 0px;
+      margin-left: 30px;
+      // border-bottom: 1px solid #fff;
+      position:relative;
+      .nav-active {
+        color: $theme-color;
+        font-weight: bold;
+        border-bottom: 1px solid $theme-color;
+      }
+      &>a {
+        font-size: 16px;
+        color: #000;
+        border-bottom: 1px solid transparent;
+        padding: 5px 0;
+        transition: .3s;
+        width: 100%;
+        &:hover {
+          color: $theme-color;
+          font-weight: bold;
+          border-bottom: 1px solid $theme-color;
+        }
+      }
+      .sub {
+        display: none;
+        min-width: 100px;
+        left: 0;
+        top: 62px;
+        position: absolute;
+        line-height: 36px;
+        z-index: 10000;
+        box-shadow: $box-shadow;
+        li {
+          background: rgba($color: #000000, $alpha: 0.7);
+          cursor: pointer;
+          &:hover {
+           background: rgba($color: #000000, $alpha: 0.8);
+          }
+          a{
+            padding: 0 10px;
+            color: #fff;
+            z-index: 1000000;
+            font-size: 14px;
+            font-weight: normal;
+            white-space: nowrap;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-content {
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 20px 0;
+  .header {
+    h3.title {
+      text-align: center;
+      // font-size: 0.34rem;
+      font-size: 24px;
+      color: #424e67;
+      font-weight: bold;
+      position: relative;   /*定位横线（当横线的父元素）*/
+    }
+    h3.title:before, h3.title:after {
+      content: '';                 /*CSS伪类用法*/
+      position: absolute;         /*定位背景横线的位置*/
+      top: 52%;
+      background: #bdbdbd;       /*宽和高做出来的背景横线*/
+      width: .8rem;
+      height: 1px;
+    }
+    h3.title:before{
+      left: 37%;        /*调整背景横线的左右距离*/
+    }
+    h3.title:after {
+      right: 37%;
+    }
+  }
+}
+.page-wrap {
+  section {
+    margin-top: 30px;
+    color: #333;
+    .title {
+      margin-bottom: 20px;
+      .split {
+        display: inline-block;
+        width: 0.1rem;
+        height: 0.2rem;
+        background: $theme-color;
+        vertical-align: middle;
+      }
+      h4 {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 0.2rem;
+        color: #424e67;
+      }
+    }
+    .text {
+      line-height: 30px;
+    }
+  }
+}
+.main {
+  overflow: hidden;
+}
+.page-bottom {
+  background: #333;
+  .page-bottom-main {
+    width: 16rem;
+    margin: 0 auto;
+    padding: 0.3rem;
+    .logo {
+      height: 1.2rem;
+      width: 2.4rem;
+      float: left;
+    }
+    .qrcode {
+      height: 1.6rem;
+      width: 1.6rem;
+      float: right;
+    }
+    .bottom-nav {
+      margin-left: 3rem;
+      margin-right: 2rem;
+      font-size: 0;
+      ul {
+        vertical-align: top;
+        width: 20%;
+        display: inline-block;
+        li {
+          font-size: 12px;
+          height: 0.38rem;
+          line-height: 0.38rem;
+          a {
+            color: #ddd;
+          }
+        }
+        li:first-child {
+          font-size: 14px;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .page-bottom-bottom {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: #000;
+    color: #fff;
+  }
+}
+@import url('http://at.alicdn.com/t/font_692972_m32pmqyapn.css');
+.slider-area {
+  .slick-slide {
+    margin: 15px;
+    transition: all ease-in-out .3s;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+}
+.record {
+  margin-left: 10px;
+  color: #fff;
+  &:hover {
+    color: #eee;
+  }
+}

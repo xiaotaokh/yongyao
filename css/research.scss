@@ -1,0 +1,135 @@
+.core-search {
+  .all-img {
+    margin-top: 40px;
+  }
+  .list-item {
+    margin-top: 40px;
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    .title {
+      font-weight: bold;
+    }
+  }
+}
+.chart-desc {
+  padding: 20px;
+  text-align: center;
+  img {
+    width: 800px;
+  }
+  // .top, .bottom{
+  //   font-size: 0;
+  // }
+  // .quarter {
+  //   width: 50%;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   .desc {
+  //     display: inline-block;
+  //     margin-top: 1.2rem;
+  //     font-size: 0.22rem;
+  //     width: 3.1rem;
+  //     .dot {
+  //       display: inline-block;
+  //       width: .1rem;
+  //       height: .1rem;
+  //       background: #579bf8;
+  //       border-radius: 50%;
+  //       margin-right: 8px;
+  //     }
+  //   }
+  //   &.top-left, &.bottom-left {
+  //     .quarter-circle {
+  //       float: right;
+  //     }
+  //     .desc {
+  //       margin-right: 0.4rem;
+  //       float: right;
+  //     }
+  //   }
+  //   &.top-right, &.bottom-right {
+  //     .quarter-circle {
+  //       float: left;
+  //     }
+  //     .desc {
+  //       float: left;
+  //       margin-left: 0.4rem;
+  //     }
+      
+  //   }
+  // }
+  .quarter-circle{
+    width: 2.25rem;
+    height: 2.25rem;
+    margin: 0.15rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.4rem;
+    padding: 20px;
+    color: #fff;
+    span {
+      font-size: 24px;
+    }
+    &.quarter-circle-1 {
+      background: #579bf8;
+      border-radius: 2.25rem 0 0 0;
+      padding: 67px 22px 0 40px;
+    }
+    &.quarter-circle-2 {
+      background: #bdbdbd;
+      border-radius: 0 2.25rem 0 0;
+      padding: 65px 34px 0 22px;
+    }
+    &.quarter-circle-3 {
+      background: #bdbdbd;
+      border-radius: 0 0 0 2.25rem;
+      padding: 18px 22px 65px 40px;
+    }
+    &.quarter-circle-4 {
+      background: #579bf8;
+      border-radius: 0 0 2.25rem 0;
+      padding: 18px 34px 65px 22px;
+    }
+  }
+}
+.service-production {
+  .desc {
+
+  }
+  .prodction-type-item {
+    margin-top: 20px;
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .prodction-list {
+    .product-slider {
+      width: 15rem;
+      margin: 0 auto;
+      height: 280px;
+    }
+    .list-item {
+      display: inline-block;
+      border: 1px solid #f5f5f5;
+      border-radius: 3px;
+      height: 250px;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      .name {
+        line-height: 50px;
+        text-align: center;
+        font-size: 0.18rem;
+        color: #424e67;
+      }
+      &:hover {
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国威永耀-加入我们</title>
+  <script src="js/ie.js"></script>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="js/webui-popover/jquery.webui-popover.min.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=AII90FlvNsh7carwTZ5U8coeKWk74vah"></script>
+</head>
+
+<body>
+  <div class="side-tool">
+    <div class="wechat clearfix">
+      <div id="wechat" class="box" data-placement="left">
+        <i class="iconfont icon-weixin"></i>
+      </div>
+    </div>
+    <div class="phone clearfix">
+      <div id="phone" class="box" data-placement="left">
+        <i class="iconfont icon-9"></i>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="page-header-bak"></div>
+    <div class="page-header">
+      <nav class="nav clearfix">
+        <img class="logo" src="images/logo.png">
+        <ul id="nav" class="nav-ul clearfix">
+          <li class="nav-item">
+            <a href="index.html">首页</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html">关于我们</a>
+            <ul class="sub">
+              <li><a href="about.html#brief">公司简介</a></li>
+              <li><a href="about.html#vision">战略定位</a></li>
+              <li><a href="about.html#service-tenet">服务宗旨</a></li>
+              <li><a href="about.html#service">发展愿景</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="service.html">业务领域</a>
+            <ul class="sub">
+              <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+              <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+              <li><a href="service.html#brand">大数据管理与培训</a></li>
+              <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="research.html">核心技术</a>
+            <ul class="sub">
+              <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+              <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+              <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+              <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="consult-service.html">特色产品</a>
+            <ul class="sub">
+              <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+              <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+              <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-active">联系我们</a>
+            <ul class="sub">
+              <li><a href="contact.html#recruit">招贤纳士</a></li>
+              <li><a href="contact.html#partner">项目合伙人招聘</a></li>
+              <li><a href="contact.html#contact">联系方式</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contact-image">
+      <img src="images/contact-banner.png">
+      <!-- <h4 class="title">加入我们</h4>
+      <div class="center">
+        <div class="welcome">北京国威永耀公司欢迎你的加入</div>
+        <div class="send">如果您对以下职位有兴趣请发简历到 gwyy_2018@163.com（请在邮件标题中注明“名字+学位+申请职位”）</div>
+      </div> -->
+    </div>
+    <div class="page-content">
+      <div class="content">
+        <section>
+          <div class="title">
+            <span class="split"></span>
+            <h4><a name="recruit" id="recruit">职位列表</a></h4>
+          </div>
+          <div class="section-content job-list">
+            <div class="job-item">
+              <div class="job-position">1.信息分析员岗位</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>若干名</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>4000元~7000元；五险一金；交通补助、餐费补助。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>本科、硕士以上学历，具有工作经验者优先考虑。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>专业背景：公共管理、公共政策研究、经济金融学、商业管理、城市规划以及城市地理学，具有经济金融分析、政策研究等相关从业经历者优先考虑；</p>
+                  <p>具有发现问题、分析解决、解决问题的能力，善于运用方法创新提高工作效率，提高工作质量；</p>
+                  <p>善于学习与研究，对新知识、新技术有很强的好奇心；</p>
+                  <p>具有优秀的书面表达能力，英文阅读和写作能力较强者，优先考虑；</p>
+                  <p>性格开朗，具有强烈的责任心，善于团队合作，善于与客户沟通。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+            <div class="job-item">
+              <div class="job-position">2. 助理研究员岗位</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>若干名</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>5000元—8000元；五险一金；交通补助、餐费补助。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>本科、硕士以上学历，具有工作经验者优先考虑。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>专业背景：公共管理、公共政策研究、经济金融学、商业管理、城市规划以及城市地理学，具有相关从业经历者优先考虑；</p>
+                  <p>具有发现问题、分析解决、解决问题的能力；</p>
+                  <p>善于学习与研究，对新知识、新技术有很强的好奇心；</p>
+                  <p>具有优秀的书面表达能力，英文阅读和写作能力较强者，优先考虑；</p>
+                  <p>参与公司研究产品开发和内容写作，并为这些产品提供独到的观点；</p>
+                  <p>在研究员以及高级研究员的带领下参与相关咨询项目，主要包括公共政策研究、产业规划、城市战略规划、以及政府、企业的战略顾问服务等方面的咨询项目；</p>
+                  <p>通过交流、合作、联络等方式，对市场部门提供研究支持；</p>
+                  <p>性格开朗，具有强烈的责任心，善于团队合作，善于与客户沟通。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+            <div class="job-item">
+              <div class="job-position">3. 副研究员、研究员岗位</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>若干名</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>7000元—1.6万元</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>硕士及以上学历，具有丰富的研究经验者优先考虑；欢迎博士、博士后毕业生加入我们。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>性格开朗，具有强烈的责任心，善于团队合作，善于与客户沟通；</p>
+                  <p>专业背景：公共管理、公共政策研究、经济金融学、商业管理、城市规划以及城市地理学，具有相关从业经历者优先考虑；</p>
+                  <p>善于学习与研究，对新知识、新技术有很强的好奇心；</p>
+                  <p>具有优秀的书面表达能力，英文阅读和写作能力较强者，优先考虑；</p>
+                  <p>参与公司产品开发和内容写作，更要为所负责的产品提供具有前瞻性观点；</p>
+                  <p>在研究员以及高级研究员的带领下参与相关咨询项目调研与撰写，主要包括公共政策研究、产业规划、城市战略规划、以及政府、企业的战略顾问服务等方面的咨询项目；</p>
+                  <p>通过交流、合作、联络等方式，对市场部提供研究支撑。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+            <div class="job-item">
+              <div class="job-position">4. 行政助理岗位</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>1位</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>4000元—6000元</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>欢迎本科毕业，具有人力资源专业教育背景的应届毕业生加入，经验丰富者优先考虑。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>具有敬业精神，良好的沟通能力；</p>
+                  <p>负责公司人力资源管理日常工作，为公司实现经营目标提供人才储备和保证；</p>
+                  <p>辅助建立并完善公司规章制度体系；</p>
+                  <p>完善绩效考核体系并负责汇总上报；</p>
+                  <p>负责员工的考勤，于次月第一个星期的工作日提供考勤报表并存档；</p>
+                  <p>负责员工档案管理，包括原始档案的收集、整理、归档、电子档案的建立；</p>
+                  <p>负责公司的日常工作管理，包括接待、卫生值日等；</p>
+                  <p>完成领导交代的其他工作。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+            <div class="job-item">
+              <div class="job-position">5.财务出纳岗位</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>1位</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>4000元—6000元</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>财务专业毕业，懂得账簿处理，欢迎具有敬业精神的应届毕业生加入我们,经验丰富者优先考虑。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>办理现金收付和银行结算业务；</p>
+                  <p>登记现金及银行存款日记账；</p>
+                  <p>保管库存现金和各种有价证券；</p>
+                  <p>保管有关印章、空白收据和空白支票；</p>
+                  <p>积极配合银行做好对账、报账工作；</p>
+                  <p>配合会计做好各种账务处理；</p>
+                  <p>完成领导交办的其他相关工作。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+            <div class="job-item">
+              <div class="job-position">6. 实习生招聘</div>
+              <div class="job-row">
+                <label class="job-label">工作地点:</label>
+                <div class="desc">
+                  <p>北京</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘人数:</label>
+                <div class="desc">
+                  <p>1位</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">有效天数:</label>
+                <div class="desc">
+                  <p>六个月</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">薪资待遇:</label>
+                <div class="desc">
+                  <p>100元/1日</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">招聘条件:</label>
+                <div class="desc">
+                  <p>在读本科生及研究生，有稳定的工作时间，一周至少保证3天。</p>
+                </div>
+              </div>
+              <div class="job-row">
+                <label class="job-label">岗位要求:</label>
+                <div class="desc">
+                  <p>参与信息数据的分析整理，以及专题研究和报告撰写。</p>
+                  <p>参与项目调研、相关人员访谈等。</p>
+                  <p>能吃苦耐劳，有强烈的学习愿望，具有较强的团队精神。</p>
+                  <p>具有一定的资料、数据搜集能力和分析能力。</p>
+                  <p>具有较好的语言表达能力，具有较好的文字功底。</p>
+                </div>
+              </div>
+              <!-- <button>申请职位：gwyy_2018@163.com</button> -->
+            </div>
+        </section>
+        <section class="partner">
+          <div class="title">
+            <span class="split"></span>
+            <h4><a name="partner" id="partner">项目合伙人招聘</a></h4>
+          </div>
+          <div>
+            <div class="job-row text">
+              国威永耀根据公司的发展需求，持续增加项目合伙人。壮大合伙人队伍是国威永耀发展的
+              基本路线。为了吸引各方人才，国威永耀实行“利益尽可能地向合伙人倾斜”的收入分配政策。项目合伙人将根据一年业务总收入状况，上缴总收入的10%~20%不等作公司的公共费用，其余部分归属项目人自主支配。
+            </div>
+            <div class="job-row">
+              <label class="job-label">任职资格:</label>
+              <div class="desc">
+                <p>有志于从事战略咨询、管理培训业务的资深人士；</p>
+                <p>具有相关从业经验，其中至少三年以上独立带团队经验；或发改委等相关机构的工作经验；或至少两年管理咨询经验；</p>
+                <p>愿意加入国威永耀，能够带领团队成员开拓市场和运作项目，自负盈亏，完成自定的业绩指标；</p>
+                <p>以“为客户创造价值”为核心理念，确保客户满意为宗旨；</p>
+                <p>遵纪守法，守规矩，讲诚信，认同国威永耀文化，遵守国威永耀的相关制度。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="title">
+            <span class="split"></span>
+            <h4><a name="contact" id="contact">联系我们</a></h4>
+          </div>
+          <div class="section-content company-info">
+            <div class="company-name">北京国威永耀数据科技有限公司</div>
+            <p>公司总机：010-56674588</p>
+            <p>官网：www.gwxll.com</p>
+            <p>地址：北京市海淀区宝盛南路1号院20号楼9层101-10室</p>
+            <p>邮编：102218</p>
+          </div>
+        </section>
+        <div class="map">
+          <div id="map">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="page-bottom">
+      <div class="page-bottom-main clearfix">
+        <img class="logo" src="images/logo.png">
+        <img class="qrcode" src="images/code.jpeg">
+        <div class="bottom-nav">
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="about.html#brief">公司简介</a></li>
+            <li><a href="about.html#vision">战略定位</a></li>
+            <li><a href="about.html#service-tenet">服务宗旨</a></li>
+            <li><a href="about.html#service">发展愿景</a></li>
+          </ul>
+          <ul>
+            <li><a href="service.html">业务领域</a></li>
+            <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+            <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+            <li><a href="service.html#brand">大数据管理与培训</a></li>
+            <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+
+          </ul>
+          <ul>
+            <li><a href="research.html">核心技术</a></li>
+            <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+            <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+            <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+            <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+          </ul>
+          <ul>
+            <li><a href="consult-service.html">特色产品</a></li>
+            <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+            <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+            <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+          </ul>
+          <ul>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="contact.html#recruit" class="recruit">招贤纳士</a></li>
+            <li><a href="contact.html#partner" class="partner">项目合伙人招聘</a></li>
+            <li><a href="contact.html#contact" class="contact">联系方式</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-bottom-bottom">
+        最终版权归属©北京国威永耀科技有限公司
+        <a class="record" href="http://www.miitbeian.gov.cn">京ICP备18055866号</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/webui-popover/jquery.webui-popover.min.js"></script>
+  <script type="text/javascript" src="js/nav-slide/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      clickFn('contact');
+      clickFn('partner');
+      clickFn('recruit');
+    })
+    // 百度地图API功能
+    var map = new BMap.Map("map");
+    var point = new BMap.Point(116.383687,40.038534);
+    map.centerAndZoom(point, 18);
+    var marker = new BMap.Marker(point); // 创建标注
+    map.addOverlay(marker); // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+  </script>
+
+</body>
+
+</html>

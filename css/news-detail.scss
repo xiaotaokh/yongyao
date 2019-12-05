@@ -1,0 +1,41 @@
+.main-content {
+  width: 16rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: .4rem;
+  .new-title {
+    font-size: .3rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  .sub-title {
+    text-align: center;
+    font-size: .16rem;
+    color: #666;
+    margin-top: .18rem;
+    span {
+      margin-left: .16rem;
+    }
+  }
+}
+
+.page-wrap {
+  min-height: 100%;
+  position: relative;
+}
+.top-wrap {
+  position: relative;
+  min-height: 100%;
+  // padding-bottom: 4rem;
+  padding-bottom: 333px;
+  box-sizing: border-box;
+}
+.page-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 333px;
+  margin-top: 333px;
+}

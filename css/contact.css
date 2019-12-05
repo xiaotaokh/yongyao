@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+.contact-image img {
+  width: 100%;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.page-content .content {
+  overflow: hidden;
+}
+
+.page-content h4.title {
+  text-align: center;
+  font-size: 0.34rem;
+  color: #424e67;
+  position: relative;
+  /*定位横线（当横线的父元素）*/
+}
+
+.page-content h4.title:before,
+.page-content h4.title:after {
+  content: '';
+  /*CSS伪类用法*/
+  position: absolute;
+  /*定位背景横线的位置*/
+  top: 52%;
+  background: #bdbdbd;
+  /*宽和高做出来的背景横线*/
+  width: 5%;
+  height: 1px;
+}
+
+.page-content h4.title:before {
+  left: 40%;
+  /*调整背景横线的左右距离*/
+}
+
+.page-content h4.title:after {
+  right: 40%;
+}
+
+.page-content .center {
+  padding: 0.35rem;
+  width: 11.64rem;
+  background: rgba(255, 255, 255, 0.5);
+  height: 2.64rem;
+  margin: 0.44rem auto;
+}
+
+.page-content .welcome {
+  text-align: center;
+  font-size: 0.5rem;
+  color: #fff;
+  z-index: 222;
+}
+
+.page-content .send {
+  line-height: 0.55rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  z-index: 222;
+}
+
+.job-list .job-item,
+.partner .job-item {
+  margin-bottom: .3rem;
+}
+
+.job-list .job-position,
+.partner .job-position {
+  color: #cb3c45;
+  font-size: 0.24rem;
+}
+
+.job-list .job-row,
+.partner .job-row {
+  margin-top: .1rem;
+}
+
+.job-list .job-row label,
+.partner .job-row label {
+  float: left;
+  color: #999;
+  font-size: 14px;
+  line-height: 0.36rem;
+}
+
+.job-list .job-row .desc,
+.partner .job-row .desc {
+  color: #333;
+  margin-left: 75px;
+}
+
+.job-list .job-row .desc p,
+.partner .job-row .desc p {
+  line-height: 0.36rem;
+  font-size: 14px;
+}
+
+.job-list button,
+.partner button {
+  margin-top: .1rem;
+  background: #cb3c45;
+  border: none;
+  border-radius: 3px;
+  width: 3rem;
+  height: 0.6rem;
+  color: #fff;
+  outline: none;
+}
+
+.company-info {
+  line-height: 0.42rem;
+}
+
+.company-info p {
+  font-size: 0.18rem;
+}
+
+.company-info .company-name {
+  font-size: 0.24rem;
+}
+
+.map {
+  width: 16rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.map #map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=contact.css.map */
+/* 去掉百度地图标注 */
+.anchorBL {
+  display: none
+}

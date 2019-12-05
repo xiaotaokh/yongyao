@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国威永耀-新闻列表</title>
+  <script src="js/ie.js"></script>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/news-list.css" />
+  <link rel="stylesheet" href="js/webui-popover/jquery.webui-popover.min.css">
+  <link rel="stylesheet" href="js/pagination/simplePagination.css" />
+</head>
+
+<body>
+  <div class="side-tool">
+    <div class="wechat clearfix">
+      <div id="wechat" class="box" data-placement="left">
+        <i class="iconfont icon-weixin"></i>
+      </div>
+    </div>
+    <div class="phone clearfix">
+      <div id="phone" class="box" data-placement="left">
+        <i class="iconfont icon-9"></i>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <div class="page-header-bak"></div>
+    <div class="top-wrap">
+      <div class="page-header">
+        <nav class="nav clearfix">
+          <img class="logo" src="images/logo.png">
+          <ul id="nav" class="nav-ul clearfix">
+            <li class="nav-item">
+              <a href="index.html" class="nav-active">首页</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html">关于我们</a>
+              <ul class="sub">
+                <li><a href="about.html#brief">公司简介</a></li>
+                <li><a href="about.html#vision">战略定位</a></li>
+                <li><a href="about.html#service-tenet">服务宗旨</a></li>
+                <li><a href="about.html#service">发展愿景</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="service.html">业务领域</a>
+              <ul class="sub">
+                <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+                <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+                <li><a href="service.html#brand">大数据管理与培训</a></li>
+                <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="research.html">核心技术</a>
+              <ul class="sub">
+                <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+                <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+                <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+                <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="consult-service.html">特色产品</a>
+              <ul class="sub">
+                <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+                <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+                <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html">联系我们</a>
+              <ul class="sub">
+                <li><a href="contact.html#recruit">招贤纳士</a></li>
+                <li><a href="contact.html#partner">项目合伙人招聘</a></li>
+                <li><a href="contact.html#contact">联系方式</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-content">
+        <div class="header">
+          <h3 class="title">国威永耀公司动态</h3>
+        </div>
+        <div class="news-list">
+          <!-- <div class="news-item">
+            <div class="name ellipsis">这是新闻的标题</div>
+            <div class="date">时间：2018-10-10</div>
+            <div class="content">
+              这是新闻内容又好多时代哈哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分 i 把手机的办法不是
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="name ellipsis">这是第二个新闻的标题</div>
+            <div class="date">时间：2018-10-10</div>
+            <div class="content">
+              这是新闻内容又好多时代哈哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分哈冯绍峰黑色的合法老是发不发比赛的腐败吧手臂地方比啊少部分 i 把手机的办法不是
+            </div>
+          </div> -->
+        </div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+    <div class="page-bottom">
+      <div class="page-bottom-main clearfix">
+        <img class="logo" src="images/logo.png">
+        <img class="qrcode" src="images/code.jpeg">
+        <div class="bottom-nav">
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="about.html#brief">公司简介</a></li>
+            <li><a href="about.html#vision">战略定位</a></li>
+            <li><a href="about.html#service-tenet">服务宗旨</a></li>
+            <li><a href="about.html#service">发展愿景</a></li>
+          </ul>
+          <ul>
+            <li><a href="service.html">业务领域</a></li>
+            <li><a href="service.html#database">大数据应用场景解决方案</a></li>
+            <li><a href="service.html#strategy">大数据系统软件开发</a></li>
+            <li><a href="service.html#brand">大数据管理与培训</a></li>
+            <li><a href="service.html#third-party">大数据支撑下的咨询顾问服务</a></li>
+
+          </ul>
+          <ul>
+            <li><a href="research.html">核心技术</a></li>
+            <li><a href="research.html#core-ability">拥有自主知识产权的国威大数据分析系统</a></li>
+            <li><a href="research.html#expert">拥有自主知识产权的国威智能检索系统</a></li>
+            <li><a href="research.html#core-research">拥有自主知识产权统一规范的产业导航系统</a></li>
+            <li><a href="research.html#analysis">拥有自主知识产权的国威语义分析系统</a></li>
+          </ul>
+          <ul>
+            <li><a href="consult-service.html">特色产品</a></li>
+            <li><a href="consult-service.html?type=country-consult">国威财政预算绩效评估管理系统</a></li>
+            <li><a href="consult-service.html?type=industry-consult">产业地图</a></li>
+            <li><a href="consult-service.html?type=company-consult">动态产业体系规划</a></li>
+          </ul>
+          <ul>
+            <li><a href="contact.html">联系我们</a></li>
+            <li><a href="contact.html#recruit" class="recruit">招贤纳士</a></li>
+            <li><a href="contact.html#partner" class="partner">项目合伙人招聘</a></li>
+            <li><a href="contact.html#contact" class="contact">联系方式</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-bottom-bottom">
+        最终版权归属©北京国威永耀科技有限公司
+        <a class="record" href="http://www.miitbeian.gov.cn">京ICP备18055866号</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="js/nav-slide/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="js/webui-popover/jquery.webui-popover.min.js"></script>
+  <script src="js/pagination/jquery.simplePagination.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script>
+    Date.prototype.format = function (format) {
+      var date = {
+        "M+": this.getMonth() + 1,
+        "d+": this.getDate(),
+        "h+": this.getHours(),
+        "m+": this.getMinutes(),
+        "s+": this.getSeconds(),
+        "q+": Math.floor((this.getMonth() + 3) / 3),
+        "S+": this.getMilliseconds()
+      };
+      if (/(y+)/i.test(format)) {
+        format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1.length));
+      }
+      for (var k in date) {
+        if (new RegExp("(" + k + ")").test(format)) {
+          format = format.replace(RegExp.$1, RegExp.$1.length == 1 ?
+            date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+        }
+      }
+      return format;
+    }
+
+    $(document).on('ready', function () {
+      function scrollFn() {};
+      var currentPage = 1;
+      var hash = window.location.hash.slice(1);
+      if (hash) {
+        currentPage = hash.split('-')[1];
+      }
+      var pageSize = 8;
+
+      getNews();
+
+      function getNews() {
+        $.ajax({
+          type: "post",
+          url: "http://39.105.51.244:80/website/getnewslist",
+          data: {
+            skip: (currentPage - 1) * pageSize,
+            count: pageSize
+          },
+          success: function (res) {
+            $('.news-list').empty();
+            var result = JSON.parse(res);
+            var newsList = result.data;
+            var total = result.baseresponse.msg;
+            newsList.forEach(function (item) {
+              var formateDate = new Date(item.date).format('YYYY-MM-dd');
+              var template = '<div class="news-item">' +
+                '<div class="name ellipsis"><a target="_blank" href="news-detail.html?id=' + item
+                .news_id + '">' + item.title + '</a></div>' +
+                '<div class="subtitle">' +
+                '<span class="date">时间：' + formateDate + '</span>' +
+                '<span class="author">作者：' + item.author + '</span>' +
+                '</div>' +
+
+                '<div class="content">' + item.content_splicing + '</div>' +
+                '</div>';
+              $('.news-list').append(template);
+            })
+            var totalPage = parseInt(Math.ceil(total / pageSize));
+
+            $('#pagination').pagination({
+              items: totalPage,
+              itemOnPage: pageSize,
+              currentPage: currentPage,
+              cssStyle: '',
+              prevText: '<span aria-hidden="true">&laquo;</span>',
+              nextText: '<span aria-hidden="true">&raquo;</span>',
+              onInit: function () {
+
+              },
+              onPageClick: function (page, evt) {
+                currentPage = page;
+                getNews();
+              }
+            });
+          },
+          error: function () {
+
+          }
+        })
+
+      }
+
+    })
+  </script>
+
+</body>
+
+</html>

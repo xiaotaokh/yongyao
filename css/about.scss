@@ -1,0 +1,217 @@
+$theme-color: #cb3c45;
+.company-brief {
+  img {
+    width: 5rem;
+    height: 4rem;
+    margin-right: 0.3rem;
+    float: left;
+  }
+  .desc {
+    color: #333;
+    p {
+      font-size: 14px;
+      text-indent: 2em;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 0;
+      // line-height: 0.3rem;
+      line-height: 30px;
+      font-size: 14px;
+    }
+  }
+  
+}
+
+.service-mode-item {
+  margin-bottom: 20px;
+  .left, .right {
+    height: 60px;
+    border-radius: 3px;
+    line-height: 60px;
+  }
+  .left {
+    border: 1px solid #424e67;
+    float: left;
+    width: 2.4rem;
+
+    text-align: center;
+    color: #424e67;
+    // font-size: 0.3rem;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+  .right {
+    border: 1px solid #bdbdbd;
+    background: #f5f6fa;
+    margin-left: 2.6rem;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+.section-content.service-flow {
+  font-size: 0;
+  .service-flow-item {
+    vertical-align: middle;
+    display: inline-block;
+    width: 200px;
+    height: 220px;
+    border-radius: 3px;
+    &.first {
+      border: 1px solid #eecab1;
+      .title {
+        background: #eecab1;
+      }
+      .detail {
+        .diamond {
+          background: #eecab1;
+        }
+      }
+    }
+    &.two {
+      border: 1px solid #f5b98f;
+      .title {
+        background: #f5b98f;
+      }
+      .detail {
+        .diamond {
+          background: #f5b98f;
+        }
+      }
+    }
+    &.three {
+      border: 1px solid #f97c57;
+      .title {
+        background: #f97c57;
+      }
+      .detail {
+        .diamond {
+          background: #f97c57;
+        }
+      }
+    }
+    &.four {
+      border: 1px solid #ed5665;
+      .title {
+        background: #ed5665;
+      }
+      .detail {
+        .diamond {
+          background: #ed5665;
+        }
+      }
+    }
+    .title {
+      text-align: center;
+      font-size: 0.24rem;
+      color: #fff;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      margin-bottom: 0;
+    }
+    .detail {
+      padding: 25px 20px;
+      li {
+        line-height: 36px;
+        .diamond {
+          display: inline-block;
+          width: 0.08rem;
+          height: 0.08rem;
+          margin: 0.04rem 0 0 0.04rem;
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform:rotate(-45deg);
+          -moz-transform:rotate(-45deg);
+          -o-transform:rotate(-45deg);
+          -ms-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+        }
+      }
+    }
+  }
+  .icon-jiantou {
+    vertical-align: middle;
+    // font-size: .4rem;
+    font-size: 50px;
+    color: #bdbdbd;
+    margin: 0 32px;
+    &.one {
+      color: #f5b98f;
+    }
+    &.two {
+      color: #f97c57;
+
+    }
+    &.three {
+      color: #ed5665;
+
+    }
+  }
+}
+.service-operate-flow {
+  font-size: 0;
+  .start, .end {
+    vertical-align: middle;
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;    
+    color: #fff;
+    padding: 30px;
+  }
+  .start {
+    background: #89bb8b;
+  }
+  .end {
+    background: #f56560;
+  }
+  .process {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 23px;
+    &.process1 {
+      background: #aeb17c;
+    }
+    &.process2 {
+      background: #d3a66d;
+    }
+    &.process3 {
+      background: #ed9d55;      
+    }
+    &.process4 {
+      background: #fd8f4d; 
+      height: 110px;
+      width: 110px;
+      padding: 30px;
+      font-size: 18px;
+    }
+    &.process5 {
+      background: #fd804d; 
+    }
+    &.process6 {
+      background: #fd7356;       
+    }
+  }
+  .iconfont {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: .3rem;
+    color: #999;
+    margin: 0 18.7px;
+    
+  }
+}
