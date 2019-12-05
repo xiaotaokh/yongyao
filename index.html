@@ -147,7 +147,7 @@
           <div class="title">
             <span class="split"></span>
             <h4>国威永耀公司动态</h4>
-            <a href="news-list.html" class="more-news" target="_blank">更多新闻</a>
+            <a href="news-list.html" class="more-news" target="_blank">更多动态</a>
           </div>
           <div class="section-content views">
             <img src="images/newspaper.webp" />
@@ -317,12 +317,12 @@
             var result = JSON.parse(res);
             var productList = result.data;
             productList.forEach(function (item) {
-
-              var template = '<div class="product-item">' +
+              let i = item.index - 1;
+              var template = '<div class="product-item product-item-' + i + '">' +
                 '<img src="http://39.105.51.244:80/website/downloadimg?img_id=' + item.img_id + '"/>' +
                 '<div class="title">' + item.title + '</div>' +
                 // '<div class="brief multi-ellipsis">&nbsp;&nbsp;&nbsp;&nbsp;' + item.describe + '</div>'
-              '</div>';
+                '</div>';
               $(".product-slider").append(template);
             })
             $(".product-slider").loading('stop');
@@ -330,13 +330,26 @@
               infinite: true,
               slidesToShow: 4,
               slidesToScroll: 4,
-              // autoplay: true
+              autoplay: true,
             });
-
-            // 点击每一项跳转到详情
-            $(".slider-area .slick-list .product-item").click(() => {
-              window.open("consult-service.html", '_blank');
-            })
+            // 点击产品跳转到产品不同详情页
+            for (const i in productList) {
+              $(".product-item-" + i).click(() => {
+                switch (Number(i)) {
+                  case 0:
+                    window.open("consult-service.html?type=country-consult", '_blank');   // 国威财政预算绩效评估管理系统
+                    break;
+                  case 1:
+                    window.open("consult-service.html?type=industry-consult", '_blank');  // 产业地图
+                    break;
+                  case 2:
+                    window.open("consult-service.html?type=company-consult", '_blank');  // 动态产业体系规划
+                    break;
+                  default:
+                    window.open("consult-service.html", '_blank');
+                }
+              })
+            }
           },
           error: function () {
 
