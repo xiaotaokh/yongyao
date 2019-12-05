@@ -41,7 +41,7 @@ function clickFn(str) {
 // 锚点
 function scrollFn($el) {
   $('html, body').animate({
-    scrollTop: $el.offset().top - 80 + "px"
+    scrollTop: $el.offset().top - 90 + "px"
   }, 500);
 }
 jQuery("#nav").slide({
