@@ -273,6 +273,7 @@
   color: #fff;
   font-size: .6rem;
   text-align: center;
+  letter-spacing: .2em;
 }
 
 .page-wrap .theme-default .introduct .Subheading {
@@ -280,6 +281,7 @@
   color: #fff;
   font-size: .3rem;
   text-align: center;
+  /* letter-spacing: 3px; */
 }
 
 .page-wrap .theme-default .introduct .btn {
