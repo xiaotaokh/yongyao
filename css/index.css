@@ -269,19 +269,19 @@
 }
 
 .page-wrap .theme-default .introduct .title {
-  margin-top: 8%;
+  margin-top: 6%;
   color: #fff;
   font-size: .6rem;
   text-align: center;
-  letter-spacing: .2em;
+  /* letter-spacing: .2em; */
 }
 
 .page-wrap .theme-default .introduct .Subheading {
   margin-top: 2%;
   color: #fff;
-  font-size: .3rem;
+  font-size: .4rem;
   text-align: center;
-  /* letter-spacing: 3px; */
+  letter-spacing: .1em;
 }
 
 .page-wrap .theme-default .introduct .btn {
